@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Tracer</h1>
+    <span id="count-badge">0 trackers</span>
+  </header>
+
+  <section id="tracker-list">
+    <p class="empty-state">No trackers detected yet. Browse a site to begin.</p>
+  </section>
+
+  <footer>
+    <button id="btn-generate" disabled>Generate Deletion Request</button>
+    <button id="btn-clear">Clear</button>
+    <a href="#" id="btn-settings">Settings</a>
+  </footer>
+
+  <script src="popup.js" type="module"></script>
+</body>
+</html>

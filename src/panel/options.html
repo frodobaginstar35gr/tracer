@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tracer — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main>
+    <h1>Tracer Settings</h1>
+
+    <section class="card">
+      <h2>Claude API Key</h2>
+      <p>Required for AI-powered tracker classification and deletion request generation.</p>
+      <input type="password" id="api-key" placeholder="sk-ant-…" autocomplete="off" />
+      <button id="save-key">Save Key</button>
+      <span id="key-status"></span>
+    </section>
+
+    <section class="card">
+      <h2>Your Identity (for deletion letters)</h2>
+      <input type="text" id="user-name" placeholder="Full name" />
+      <input type="email" id="user-email" placeholder="your@email.com" />
+      <button id="save-identity">Save</button>
+    </section>
+
+    <section class="card" id="letter-section" style="display:none">
+      <h2>Generated Deletion Request</h2>
+      <textarea id="letter-output" rows="20" readonly></textarea>
+      <button id="copy-letter">Copy to Clipboard</button>
+    </section>
+  </main>
+
+  <script src="options.js" type="module"></script>
+</body>
+</html>
